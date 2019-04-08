@@ -133,9 +133,9 @@ const thanos = document.createElement('a'); //creating new DOM element
 thanos.textContent = "Infinity Stones";     //defining new item    
 navbar.appendChild(thanos);                 //appending
 
-const superman = document.createElement('a'); //creating new DOM element
-thanos.textContent = "Kryptonite";           //defining new item    
-navbar.prepend(superman);                   //prepend
+const superman = document.createElement('a');   //creating new DOM element
+superman.textContent = "Kryptonite";           //defining new item    
+navbar.prepend(superman);                     //prepend
 
 
 
