@@ -41,34 +41,65 @@ const siteContent = {
 
 //Img
 
-let logoImg = document.getElementById("logo-img");
+const logoImg = document.getElementById("logo-img");
 logoImg.setAttribute("src", "img/logo.png");
 
-let headerImg = document.getElementById("cta-img");
+const headerImg = document.getElementById("cta-img");
 headerImg.setAttribute("src", "img/header-img.png")
 
-let middleImg = document.getElementById("middle-img");
+const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute("src", "img/mid-page-accent.jpg")
 
 //Nav
 
-let services = document.getElementsByTagName("a")[0];
+const services = document.getElementsByTagName("a")[0];
 services.innerHTML = "Services";
-let product = document.getElementsByTagName("a")[1];
+const product = document.getElementsByTagName("a")[1];
 product.innerHTML = "Product";
-let vision = document.getElementsByTagName("a")[2];
+const vision = document.getElementsByTagName("a")[2];
 vision.innerHTML = "Vision";
-let features = document.getElementsByTagName("a")[3];
+const features = document.getElementsByTagName("a")[3];
 features.innerHTML = "Features";
-let about = document.getElementsByTagName("a")[4];
+const about = document.getElementsByTagName("a")[4];
 about.innerHTML = "About";
-let contact = document.getElementsByTagName("a")[5];
+const contact = document.getElementsByTagName("a")[5];
 contact.innerHTML = "Contact";
 
 //CTA
 
-let h1message = document.getElementsByTagName("h1")[0];
+const h1message = document.getElementsByTagName("h1")[0];
 h1message.innerHTML = "DOM is Awesome";
 
-let button = document.getElementsByTagName("button")[0];
+const button = document.getElementsByTagName("button")[0];
 button.innerHTML = "Get Started";
+
+//Main Content
+const featuresH4 = document.getElementsByTagName("h4") [0];
+featuresH4.innerHTML = "Features";
+const featuresContent = document.getElementsByTagName("p") [0];
+featuresContent.innerHTML = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+const aboutH4 = document.getElementsByTagName("h4") [1];
+aboutH4.innerHTML = "About";
+const aboutContent = document.getElementsByTagName("p") [1];
+aboutContent.innerHTML = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+const servicesH4 = document.getElementsByTagName("h4") [2];
+servicesH4.innerHTML = "Services";
+const servicesContent = document.getElementsByTagName("p")[2];
+servicesContent.innerHTML = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+
+const productH4 = document.getElementsByTagName("h4") [3];
+productH4.innerHTML = "Product";
+const productContent = document.getElementsByTagName("p")[3];
+productContent.innerHTML = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const visionH4 = document.getElementsByTagName("h4") [4];
+visionH4.innerHTML = "Vision";
+const visionContent = document.getElementsByTagName("p")[4];
+visionContent.innerHTML ="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+
+
+
