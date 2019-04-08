@@ -117,6 +117,27 @@ email.innerHTML = "sales@greatidea.io";
 const footer = document.getElementsByTagName("p") [8];
 footer.innerHTML = "Copyright Great Idea! 2018";
 
+//changing color of the navigation text
+
+
+const navigation = document.querySelectorAll("a");
+for (i = 0; i<navigation.length; i++ ){
+  navigation[i].style.color = "green";
+}
+
+//Utilize .appendChild() and .prepend() to add two new items to the navigation system. 
+
+const navbar = document.getElementsByTagName ('nav') [0];
+
+const thanos = document.createElement('a'); //creating new DOM element
+thanos.textContent = "Infinity Stones";     //defining new item    
+navbar.appendChild(thanos);                 //appending
+
+const superman = document.createElement('a'); //creating new DOM element
+thanos.textContent = "Kryptonite";           //defining new item    
+navbar.prepend(superman);                   //prepend
+
+
 
 
 
