@@ -45,7 +45,7 @@ const logoImg = document.getElementById("logo-img");
 logoImg.setAttribute("src", "img/logo.png");
 
 const headerImg = document.getElementById("cta-img");
-headerImg.setAttribute("src", "img/header-img.png")
+headerImg.src = "img/header-img.png"
 
 const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute("src", "img/mid-page-accent.jpg")
@@ -67,11 +67,19 @@ contact.textContent = "Contact";
 
 //CTA
 
-const h1message = document.getElementsByTagName("h1")[0];
-h1message.textContent = "DOM is Awesome";
+// const h1message = document.getElementsByTagName("h1")[0];
+// h1message.textContent = "DOM is Great";
 
-const button = document.getElementsByTagName("button")[0];
-button.textContent = "Get Started";
+// const button = document.getElementsByTagName("button")[0];
+// button.textContent = "Get Started";
+
+// CTA, adding H1 
+const ctaText = document.querySelector('.cta-text h1'); 
+ctaText.innerText = siteContent["cta"]["h1"]; 
+
+// CTA, adding button for Get Started 
+ const ctaButton = document.querySelector('.cta-text button'); 
+ ctaButton.innerText = siteContent["cta"]["button"];
 
 //Main Content
 
