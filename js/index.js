@@ -53,69 +53,69 @@ middleImg.setAttribute("src", "img/mid-page-accent.jpg")
 //Nav
 
 const services = document.getElementsByTagName("a")[0];
-services.innerHTML = "Services";
+services.textContent = "Services";
 const product = document.getElementsByTagName("a")[1];
-product.innerHTML = "Product";
+product.textContent = "Product";
 const vision = document.getElementsByTagName("a")[2];
-vision.innerHTML = "Vision";
+vision.textContent = "Vision";
 const features = document.getElementsByTagName("a")[3];
-features.innerHTML = "Features";
+features.textContent = "Features";
 const about = document.getElementsByTagName("a")[4];
-about.innerHTML = "About";
+about.textContent = "About";
 const contact = document.getElementsByTagName("a")[5];
-contact.innerHTML = "Contact";
+contact.textContent = "Contact";
 
 //CTA
 
 const h1message = document.getElementsByTagName("h1")[0];
-h1message.innerHTML = "DOM is Awesome";
+h1message.textContent = "DOM is Awesome";
 
 const button = document.getElementsByTagName("button")[0];
-button.innerHTML = "Get Started";
+button.textContent = "Get Started";
 
 //Main Content
 
 const featuresH4 = document.getElementsByTagName("h4") [0];
-featuresH4.innerHTML = "Features";
+featuresH4.textContent = "Features";
 const featuresContent = document.getElementsByTagName("p") [0];
-featuresContent.innerHTML = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 const aboutH4 = document.getElementsByTagName("h4") [1];
-aboutH4.innerHTML = "About";
+aboutH4.textContent = "About";
 const aboutContent = document.getElementsByTagName("p") [1];
-aboutContent.innerHTML = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+aboutContent.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 const servicesH4 = document.getElementsByTagName("h4") [2];
-servicesH4.innerHTML = "Services";
+servicesH4.textContent = "Services";
 const servicesContent = document.getElementsByTagName("p")[2];
-servicesContent.innerHTML = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+servicesContent.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 
 const productH4 = document.getElementsByTagName("h4") [3];
-productH4.innerHTML = "Product";
+productH4.textContent = "Product";
 const productContent = document.getElementsByTagName("p")[3];
-productContent.innerHTML = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+productContent.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 
 const visionH4 = document.getElementsByTagName("h4") [4];
-visionH4.innerHTML = "Vision";
+visionH4.textContent = "Vision";
 const visionContent = document.getElementsByTagName("p")[4];
-visionContent.innerHTML ="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+visionContent.textContent ="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 
 //Contact
 
 const contactH4 = document.getElementsByTagName("h4") [5];
-contactH4.innerHTML = "Contact";
+contactH4.textContent = "Contact";
 const address = document.getElementsByTagName("p") [5];
-address.innerHTML = "123 Way 456 Street Somewhere, USA";
+address.textContent = "123 Way 456 Street Somewhere, USA";
 const phone = document.getElementsByTagName("p") [6];
-phone.innerHTML = "1 (888) 888-8888";
+phone.textContent = "1 (888) 888-8888";
 const email = document.getElementsByTagName("p") [7];
-email.innerHTML = "sales@greatidea.io";
+email.textContent = "sales@greatidea.io";
 
 //Footer
 
 const footer = document.getElementsByTagName("p") [8];
-footer.innerHTML = "Copyright Great Idea! 2018";
+footer.textContent = "Copyright Great Idea! 2018";
 
 //changing color of the navigation text
 
