@@ -74,6 +74,7 @@ const button = document.getElementsByTagName("button")[0];
 button.innerHTML = "Get Started";
 
 //Main Content
+
 const featuresH4 = document.getElementsByTagName("h4") [0];
 featuresH4.innerHTML = "Features";
 const featuresContent = document.getElementsByTagName("p") [0];
@@ -99,6 +100,22 @@ const visionH4 = document.getElementsByTagName("h4") [4];
 visionH4.innerHTML = "Vision";
 const visionContent = document.getElementsByTagName("p")[4];
 visionContent.innerHTML ="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+//Contact
+
+const contactH4 = document.getElementsByTagName("h4") [5];
+contactH4.innerHTML = "Contact";
+const address = document.getElementsByTagName("p") [5];
+address.innerHTML = "123 Way 456 Street Somewhere, USA";
+const phone = document.getElementsByTagName("p") [6];
+phone.innerHTML = "1 (888) 888-8888";
+const email = document.getElementsByTagName("p") [7];
+email.innerHTML = "sales@greatidea.io";
+
+//Footer
+
+const footer = document.getElementsByTagName("p") [8];
+footer.innerHTML = "Copyright Great Idea! 2018";
 
 
 
