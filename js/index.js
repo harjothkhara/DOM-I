@@ -42,108 +42,104 @@ const siteContent = {
 //Img
 
 const logoImg = document.getElementById("logo-img");
-logoImg.setAttribute("src", "img/logo.png");
+logoImg.setAttribute("src", "img/logo.png"); //one way
 
 const headerImg = document.getElementById("cta-img");
-headerImg.src = "img/header-img.png"
+headerImg.src = "img/header-img.png" //another way
 
 const middleImg = document.getElementById("middle-img");
-middleImg.setAttribute("src", "img/mid-page-accent.jpg")
+middleImg.setAttribute("src", siteContent ["main-content"]["middle-img-src"]) //example way
 
 //Nav
 
-const services = document.getElementsByTagName("a")[0];
-services.textContent = "Services";
-const product = document.getElementsByTagName("a")[1];
-product.textContent = "Product";
-const vision = document.getElementsByTagName("a")[2];
-vision.textContent = "Vision";
-const features = document.getElementsByTagName("a")[3];
-features.textContent = "Features";
-const about = document.getElementsByTagName("a")[4];
-about.textContent = "About";
-const contact = document.getElementsByTagName("a")[5];
-contact.textContent = "Contact";
-
-//CTA
-
-// const h1message = document.getElementsByTagName("h1")[0];
-// h1message.textContent = "DOM is Great";
-
-// const button = document.getElementsByTagName("button")[0];
-// button.textContent = "Get Started";
-
-// CTA, adding H1 
-const ctaText = document.querySelector('.cta-text h1'); 
-ctaText.innerText = siteContent["cta"]["h1"]; 
-
-// CTA, adding button for Get Started 
- const ctaButton = document.querySelector('.cta-text button'); 
- ctaButton.innerText = siteContent["cta"]["button"];
-
-//Main Content
-
-const featuresH4 = document.getElementsByTagName("h4") [0];
-featuresH4.textContent = "Features";
-const featuresContent = document.getElementsByTagName("p") [0];
-featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-
-const aboutH4 = document.getElementsByTagName("h4") [1];
-aboutH4.textContent = "About";
-const aboutContent = document.getElementsByTagName("p") [1];
-aboutContent.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-
-const servicesH4 = document.getElementsByTagName("h4") [2];
-servicesH4.textContent = "Services";
-const servicesContent = document.getElementsByTagName("p")[2];
-servicesContent.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-
-
-const productH4 = document.getElementsByTagName("h4") [3];
-productH4.textContent = "Product";
-const productContent = document.getElementsByTagName("p")[3];
-productContent.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-
-const visionH4 = document.getElementsByTagName("h4") [4];
-visionH4.textContent = "Vision";
-const visionContent = document.getElementsByTagName("p")[4];
-visionContent.textContent ="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-
-//Contact
-
-const contactH4 = document.getElementsByTagName("h4") [5];
-contactH4.textContent = "Contact";
-const address = document.getElementsByTagName("p") [5];
-address.textContent = "123 Way 456 Street Somewhere, USA";
-const phone = document.getElementsByTagName("p") [6];
-phone.textContent = "1 (888) 888-8888";
-const email = document.getElementsByTagName("p") [7];
-email.textContent = "sales@greatidea.io";
-
-//Footer
-
-const footer = document.getElementsByTagName("p") [8];
-footer.textContent = "Copyright Great Idea! 2018";
-
 //changing color of the navigation text
 
-
 const navigation = document.querySelectorAll("a");
-for (i = 0; i<navigation.length; i++ ){
+
+for (i = 0; i < navigation.length; i++ ){
   navigation[i].style.color = "green";
 }
 
+  const navitem1 = navigation[0]; 
+  navitem1.innerText = siteContent["nav"]["nav-item-1"]; 
+
+  const navitem2 = navigation[1]; 
+  navitem2.innerText = siteContent["nav"]["nav-item-2"];   
+
+
+  const navitem3 = navigation[2]; 
+  navitem3.innerText = siteContent["nav"]["nav-item-3"]; 
+
+
+  const navitem4 = navigation[3]; 
+  navitem4.innerText = siteContent["nav"]["nav-item-4"]; 
+
+
+  const navitem5 = navigation[4]; 
+  navitem5.innerText = siteContent["nav"]["nav-item-5"]; 
+ 
+
+  const navitem6 = navigation[5]; 
+  navitem6.innerText = siteContent["nav"]["nav-item-6"];  
+
+
+//CTA
+
+const h1message = document.querySelector(".cta-text h1");
+h1message.textContent = siteContent["cta"]["h1"];
+
+const button = document.querySelector(".cta-text button");
+button.textContent = siteContent["cta"]["button"];
+
+
+//Main Content
+
+const headingsH4 = document.querySelectorAll("h4");
+headingsH4[0].textContent = siteContent["main-content"]["features-h4"];
+headingsH4[1].textContent = siteContent["main-content"]["about-h4"];
+headingsH4[2].textContent = siteContent["main-content"]["services-h4"];
+headingsH4[3].textContent = siteContent["main-content"]["product-h4"];
+headingsH4[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const mainP = document.querySelectorAll("p");
+mainP[0].textContent = siteContent["main-content"]["features-content"];
+mainP[1].textContent = siteContent["main-content"]["about-content"];
+mainP[2].textContent = siteContent["main-content"]["services-content"];
+mainP[3].textContent = siteContent["main-content"]["product-content"];
+mainP[4].textContent = siteContent["main-content"]["vision-content"];
+
+//Contact
+
+const contactH4 = document.querySelector(".contact h4");
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+
+const contactP = document.querySelectorAll(".contact p");
+contactP[0].textContent = siteContent["contact"]["address"];
+contactP[1].textContent = siteContent["contact"]["phone"];
+contactP[2].textContent = siteContent["contact"]["email"];
+
+//Footer
+
+const footer = document.querySelector("footer");
+footer.textContent  = siteContent["footer"]["copyright"];
+
 //Utilize .appendChild() and .prepend() to add two new items to the navigation system. 
 
-const navbar = document.getElementsByTagName ('nav') [0];
+// const navbar = document.getElementsByTagName('nav')
 
 const thanos = document.createElement('a'); //creating new DOM element
 thanos.textContent = "Infinity Stones";     //defining new item    
-navbar.appendChild(thanos);                 //appending
+thanos.style.padding = "0 0 0 25px";        //style 
+navitem6.appendChild(thanos);               //appending
+
+
+
+
 
 const superman = document.createElement('a');   //creating new DOM element
 superman.textContent = "Kryptonite";           //defining new item    
-navbar.prepend(superman);                     //prepend
+superman.style.padding = "0 25px 0 0";         //style 
+navitem1.prepend(superman);                    //prepend
 
 
 
