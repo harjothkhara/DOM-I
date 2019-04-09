@@ -92,6 +92,7 @@ const button = document.querySelector(".cta-text button");
 button.textContent = siteContent["cta"]["button"];
 
 
+
 //Main Content
 
 const headingsH4 = document.querySelectorAll("h4");
@@ -142,6 +143,9 @@ superman.style.padding = "0 25px 0 0";         //style
 navitem1.prepend(superman);                    //prepend
 
 
+//messing around
 
-
-
+const secondaryHeaders = document.querySelectorAll('h4');
+secondaryHeaders.forEach(function(currentValue){
+  currentValue.style.color = 'crimson';
+})
